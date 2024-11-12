@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from elder_care.config import BLD
+from caregiving.config import BLD
 
 
 def is_weakly_increasing(series):

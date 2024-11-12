@@ -9,7 +9,7 @@
 # # Assert that all groups have weakly increasing work experience
 import pandas as pd
 
-from elder_care.config import BLD
+from caregiving.config import BLD
 
 
 def test_data_merged():
