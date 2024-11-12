@@ -3,10 +3,10 @@ requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.0"]
 
 
 [tool.setuptools_scm]
-write_to = "src/elder_care/_version.py"
+write_to = "src/caregiving/_version.py"
 
 [tool.pytask.ini_options]
-paths = ["./src/elder_care"]
+paths = ["./src/caregiving"]
 
 
 [tool.interrogate]
@@ -109,21 +109,21 @@ extend-ignore = [
 [tool.ruff.lint.per-file-ignores]
 "tests/*" = ["D", "ANN"]
 "docs/source/conf.py" = ["INP001"]
-"src/elder_care/sandbox/run.py" = ["INP001"]
-"src/elder_care/utils.py" = ["S301"]
-"src/elder_care/simulation/initial_conditions.py" = ["ERA001", "PD008"]
-"src/elder_care/moments/task_create_empirical_moments.py" = ["ERA001"]
-"src/elder_care/moments/task_create_empirical_cov.py" = ["ERA001"]
-"src/elder_care/model/shared.py" = ["ERA001"]
-"src/elder_care/model/task_debugging.py" = ["ERA001"]
-"src/elder_care/model/task_specify_model.py" = ["ERA001"]
-"src/elder_care/model/utility_functions.py" = ["ERA001"]
-"src/elder_care/simulation/simulate.py" = ["ERA001"]
-"src/elder_care/data_management/task_create_estimation_data_set.py" = ["ERA001"]
-"src/elder_care/data_management/task_create_parent_child_data_set.py" = ["ERA001"]
-"src/elder_care/counterfactual/task_simulate_counterfactual.py" = ["ERA001"]
-"src/elder_care/exogenous_processes/task_create_exog_processes_soep.py" = ["ERA001"]
-"src/elder_care/moments/task_create_care_mix_coefficients.py" = ["ERA001"]
+"src/caregiving/sandbox/run.py" = ["INP001"]
+"src/caregiving/utils.py" = ["S301"]
+"src/caregiving/simulation/initial_conditions.py" = ["ERA001", "PD008"]
+"src/caregiving/moments/task_create_empirical_moments.py" = ["ERA001"]
+"src/caregiving/moments/task_create_empirical_cov.py" = ["ERA001"]
+"src/caregiving/model/shared.py" = ["ERA001"]
+"src/caregiving/model/task_debugging.py" = ["ERA001"]
+"src/caregiving/model/task_specify_model.py" = ["ERA001"]
+"src/caregiving/model/utility_functions.py" = ["ERA001"]
+"src/caregiving/simulation/simulate.py" = ["ERA001"]
+"src/caregiving/data_management/task_create_estimation_data_set.py" = ["ERA001"]
+"src/caregiving/data_management/task_create_parent_child_data_set.py" = ["ERA001"]
+"src/caregiving/counterfactual/task_simulate_counterfactual.py" = ["ERA001"]
+"src/caregiving/exogenous_processes/task_create_exog_processes_soep.py" = ["ERA001"]
+"src/caregiving/moments/task_create_care_mix_coefficients.py" = ["ERA001"]
 
 
 
@@ -132,7 +132,7 @@ convention = "google"
 
 
 [[tool.refurb.amend]]
-path = "src/elder_care/simulation/simulate.py"
+path = "src/caregiving/simulation/simulate.py"
 ignore = ["FURB109"]
 
 

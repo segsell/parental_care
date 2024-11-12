@@ -1,5 +1,5 @@
-import elder_care
+import caregiving
 
 
 def test_import():
-    assert hasattr(elder_care, "__version__")
+    assert hasattr(caregiving, "__version__")

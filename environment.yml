@@ -1,5 +1,5 @@
 ---
-name: elder_care
+name: caregiving
 
 channels:
   - conda-forge

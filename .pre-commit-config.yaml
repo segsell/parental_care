@@ -44,11 +44,11 @@ repos:
     rev: 24.8.0
     hooks:
     -   id: black
--   repo: https://github.com/PyCQA/docformatter
-    rev: v1.7.5
-    hooks:
-    -   id: docformatter
-        args: [--in-place, --wrap-summaries, "88", --wrap-descriptions, "88", --blank]
+# -   repo: https://github.com/PyCQA/docformatter
+#     rev: v1.7.5
+#     hooks:
+#     -   id: docformatter
+#         args: [--in-place, --wrap-summaries, "88", --wrap-descriptions, "88", --blank]
 -   repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.6.8
     hooks:
@@ -59,7 +59,7 @@ repos:
         -   pyi
         args:
         -   --fix
-      # Run the formatter.
+    # Run the formatter.
     # -   id: ruff-format
     #     types_or:
     #     -   python
@@ -106,7 +106,7 @@ repos:
     rev: v2.3.0
     hooks:
     -   id: codespell
-        exclude: src/elder_care/moments/task_care_mix_statistical_office.py
+        exclude: src/caregiving/moments/task_care_mix_statistical_office.py
 -   repo: meta
     hooks:
     -   id: check-useless-excludes
