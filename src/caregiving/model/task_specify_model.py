@@ -6,6 +6,7 @@ from typing import Annotated, Any
 import numpy as np
 import pytask
 import yaml
+from dcegm.pre_processing.setup_model import setup_and_save_model
 from pytask import Product
 
 from caregiving.config import BLD, SRC
@@ -29,7 +30,6 @@ from caregiving.model.utility_functions import (
     create_utility_functions,
 )
 from caregiving.utils import load_dict_from_pickle
-from dcegm.pre_processing.setup_model import setup_and_save_model
 
 
 # @pytask.mark.skip(reason="Respecifying model.")

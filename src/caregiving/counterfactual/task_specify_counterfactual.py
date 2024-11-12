@@ -2,6 +2,7 @@ from pathlib import Path
 from typing import Annotated, Any
 
 import pytask
+from dcegm.pre_processing.setup_model import setup_and_save_model
 from pytask import Product
 
 from caregiving.config import BLD, SRC
@@ -15,7 +16,6 @@ from caregiving.model.utility_functions import (
     create_final_period_utility_functions,
     create_utility_functions,
 )
-from dcegm.pre_processing.setup_model import setup_and_save_model
 
 
 @pytask.mark.skip(reason="Respecifying model.")

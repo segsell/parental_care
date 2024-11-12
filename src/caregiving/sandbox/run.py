@@ -13,6 +13,8 @@ import jax.numpy as jnp
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+from dcegm.pre_processing.state_space import create_state_space
+from dcegm.solve import get_solve_function
 
 from caregiving.model import (
     budget_constraint,
@@ -31,8 +33,6 @@ from caregiving.model import (
     utility_final_consume_all,
     utility_func,
 )
-from dcegm.pre_processing.state_space import create_state_space
-from dcegm.solve import get_solve_function
 
 
 def _plot_dist(sample):
