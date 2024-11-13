@@ -39,6 +39,7 @@ dependencies:
   - pytest
   - pytest-cov
   - pytest-xdist
+  - pyreadr # for reading R data (*.rds) files
   - tox-conda
 
   # Jupyter
